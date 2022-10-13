@@ -1,0 +1,64 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@800&family=Grenze:wght@900&family=Maven+Pro&family=Saira+Condensed:wght@600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+
+	/*  
+		Since 1rem = 16px, let's convert it to 1rem = 10px for easy calculation
+		100% = 1 rem = 16px
+		62.5% = 1 rem = 10px
+	 */
+	font-size: 62.5%;
+}
+
+.navbar {
+	width: 100vw;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	height: 70px;
+	background: #181818;
+	cursor: pointer;
+}
+
+.navbar ul {
+	margin-right: 80px;
+}
+
+.navbar li {
+	list-style: none;
+	display: inline;
+	padding: 10px;
+	font-size: 2rem;
+	color: whitesmoke;
+}
+
+.mid-section {
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	align-items: center;
+	height: 40vh;
+	background: #8758FF;
+	position: relative;
+}
+
+.curve-shape {
+	background: #5CB8E4;
+	height: 100%;
+	clip-path: ellipse(60% 100% at 50% 0%);
+	width: 70%;
+	flex-grow: 1;
+}
+
+.text-container {
+	color: ghostwhite;
+	display: flex;
+	flex-direction: column;
+}

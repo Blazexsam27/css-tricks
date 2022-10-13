@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	background: #000;
+	display: grid;
+	place-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.container * {
+	padding: 5px;
+}
+
+.container li {
+	font-size: 30px;
+	font-weight: bolder;
+	color: #fff;
+}
+
+li:first-child {
+	color: lime;
+}
+
+li:last-child {
+	color: cyan;
+}
+
+li:nth-child(even) {
+
+	/* IMP: YOU CAN ALSO WRITE 2n instead of even*/
+	color: slategrey;
+}
+
+li:nth-child(odd) {
+
+	/* IMP: YOU CAN ALSO WRITE 2n + 1 instead of odd*/
+	color: hotpink;
+}
+
+/*Let's say we want to exclude a child to not to give properties, for that we can use not()*/
+li:not(:nth-child(3)) {
+	color: crimson;
+}
+
+/*ABOVE CODE WILL COLOR EVERY OTHER LIST ELEMENT TO CRIMSON EXCEPT FOR 3 ITEM*/

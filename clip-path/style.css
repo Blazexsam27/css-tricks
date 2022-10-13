@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@800&family=Grenze:wght@900&family=Saira+Condensed:wght@600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.main-div {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background: hsl(200, 95%, 94%);
+}
+
+.center-div {
+	width: 455px;
+	height: 250px;
+	border-radius: 18px;
+	padding: 30px;
+	background: linear-gradient(to right top, #52b6fe, #6154fe);
+	box-shadow: 0 0 10px 1px #b3b3b3;
+	color: #fff;
+	position: relative;
+}
+
+.center-div::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgb(22, 255, 0);
+	background: linear-gradient(90deg, rgba(22, 255, 0, 1) 0%, rgba(0, 249, 255, 1) 57%, rgba(0, 121, 255, 1) 100%);
+	z-index: 1;
+	border-radius: 18px;
+	clip-path: polygon(73% 16%, 100% 8%, 72% 51%, 100% 100%, 37% 61%, 0 47%, 0 30%);
+	opacity: 0.7;
+}
+
+.card-upper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-upper h2 {
+	letter-spacing: 2px;
+	font-size: 24px;
+	z-index: 2;
+}
+
+.card-upper h1 {
+	font-size: 42px;
+	z-index: 2;
+}
+
+.card-lower {
+	position: absolute;
+	bottom: 40px;
+	z-index: 2;
+}
+
+.card-lower h2 {
+	color: #dfe6e9;
+	letter-spacing: 1px;
+	font-size: 20px;
+	margin-bottom: 5px;
+	z-index: 2;
+}
+
+.card-lower h3 {
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 25px;
+	z-index: 2;
+}

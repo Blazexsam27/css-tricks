@@ -1,0 +1,40 @@
+/* default selection highlighter */
+
+::selection {
+  color: #82eeee;
+  background-color: black;
+}
+
+.about-section {
+  display: grid;
+  place-items: center;
+}
+
+.about-heading {
+  font-size: 42px;
+}
+
+.about-desc {
+  text-align: center;
+  font-size: 20px;
+}
+.contact-section {
+  display: grid;
+  margin-top: 50px;
+  place-items: center;
+}
+.contact-section ul,
+li {
+  list-style: none;
+  display: inline;
+}
+
+.contact-section li {
+  padding: 15px 20px;
+  font-size: 18px;
+}
+
+.contact-section li::selection {
+  color: rgb(255, 170, 184);
+  background: rgb(14, 9, 78);
+}

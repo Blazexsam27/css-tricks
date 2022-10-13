@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CENTERING USING TRANSLATE PROPERTY */
+
+/* .parent-div {
+  background: cyan;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.child-div {
+  background: lime;
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* CENTERING USING FLEX BOX */
+
+/* .parent-div {
+  background: cyan;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-div {
+  background: lime;
+  width: 50vw;
+  height: 50vh;
+} */
+
+/* CENTERING USING GRID */
+
+.parent-div {
+  background: cyan;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.child-div {
+  background: lime;
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+}

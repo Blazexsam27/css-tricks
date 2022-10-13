@@ -1,0 +1,89 @@
+:root {
+  --before-after-width: 24vw;
+  --before-after-md-width: 18vw;
+  --before-after-sm-width: 16vw;
+}
+
+* {
+  margin: 0;
+
+  padding: 0;
+}
+
+body {
+  background: #3498db;
+}
+
+.logo-text {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.logo-text h1 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  font-family: "Grenze Gotisch", cursive;
+}
+
+/* .logo-text h1::before {
+  position: absolute;
+  content: "Front End Developer";
+  width: var(--before-after-width);
+}
+
+.logo-text h1::after {
+  position: absolute;
+  content: "Youtuber";
+  width: var(--before-after-width);
+} */
+
+/* .logo-text h1::before {
+  position: absolute;
+  content: "";
+  width: var(--before-after-width);
+  border-bottom: 9px solid rgb(49, 49, 49);
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-text h1::after {
+  position: absolute;
+  content: "";
+  width: var(--before-after-width);
+  border-bottom: 9px solid rgb(49, 49, 49);
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.logo-text h1::before {
+  position: absolute;
+  content: "";
+  width: var(--before-after-width);
+  border-bottom: 9px solid rgb(49, 49, 49);
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-text h1::after {
+  position: absolute;
+  content: "\f005";
+  color: limegreen;
+  height: 25px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 3rem;
+  width: 20vw;
+  /* width: var(--before-after-width); */
+  /* border-bottom: 9px solid rgb(49, 49, 49); */
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
